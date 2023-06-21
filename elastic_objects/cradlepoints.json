@@ -1,0 +1,33 @@
+{
+    "mappings": {
+        "properties": {
+            "@timestamp": { "type": "date" },
+            "net_id": { "type": "keyword" },
+            "router_id": { "type": "keyword" },
+            "asset_id": { "type": "keyword" },
+            "custom1": { "type": "keyword" },
+            "cell_id": { "type": "keyword" },
+            "service_type": { "type": "keyword" },
+            
+            "rsrp": { "type": "half_float", "index": false },
+            "rsrp5g": { "type": "half_float", "index": false },
+            "rsrp5g_highband": { "type": "half_float", "index": false },
+
+            "rsrq": { "type": "half_float", "index": false },
+            "rsrq5g": { "type": "half_float", "index": false },
+            "rsrq5g_highband": { "type": "half_float", "index": false },
+
+            "sinr": { "type": "half_float", "index": false },
+            "sinr5g": { "type": "half_float", "index": false },
+            "sinr5g_highband": { "type": "half_float", "index": false },
+
+            "dbm": { "type": "integer", "index": false },
+            "ecio": { "type": "integer", "index": false },
+
+            "rssi": { "type": "integer", "index": false },
+            "rssnr": { "type": "integer", "index": false },
+
+            "signal_percent": { "type": "byte", "index": false }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.env
+*.old
+
+data_stores
+data_stores_ALL_TEST
+
+# Caches
+__pycache__
+.pytest_cache
+logs/*
+cron/*
+
+# tables
+conversion_tables/tbs/*
+session_data.json

@@ -1,0 +1,30 @@
+{
+    "mappings": {
+        "properties": {
+            "@timestamp": { "type": "date" },
+            "net_id": { "type": "keyword" },
+            "router_id": { "type": "keyword" },
+            "asset_id": { "type": "keyword" },
+            "custom1": { "type": "keyword" },
+
+            "location": { "type": "geo_point" },
+
+            "rfband": { "type": "string", "index": false },
+            "rssi": { "type": "integer", "index": false },
+            "rsrp": { "type": "half_float", "index": false },
+            "rsrq": { "type": "half_float", "index": false },
+            "sinr": { "type": "half_float", "index": false },
+            
+            "rfband_5g": { "type": "string", "index": false },
+            "rsrp_5g": { "type": "half_float", "index": false },
+            "rsrq_5g": { "type": "half_float", "index": false },
+            "sinr_5g": { "type": "half_float", "index": false },
+
+            "signal_percent": { "type": "byte", "index": false },
+            
+            "dbm": { "type": "short", "index": false },
+
+            "cell_id": { "type": "keyword" }
+        }
+    }
+}
